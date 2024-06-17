@@ -3,6 +3,9 @@ import { UilArrowRight } from '@iconscout/react-unicons';
 import { UilTimes } from '@iconscout/react-unicons';
 import { UilCheckCircle } from '@iconscout/react-unicons';
 import { UilParcel } from '@iconscout/react-unicons';
+import { UilBracketsCurly } from '@iconscout/react-unicons';
+import { UilIcons } from '@iconscout/react-unicons';
+
 import "./services.css";
 
 const Services = () => {
@@ -71,7 +74,7 @@ const Services = () => {
             <div className="services__content">
 
 <div>
-    <UilParcel size="20" color="#000000" className="services__icon" />
+    <UilBracketsCurly size="20" color="#000000" className="services__icon" />
     <h3 className="services__title"> Full-Stack <br/> Developer</h3>
 
 </div>
@@ -120,7 +123,7 @@ const Services = () => {
 <div className="services__content">
 
 <div>
-    <UilParcel size="20" color="#000000" className="services__icon" />
+    <UilIcons size="20" color="#000000" className="services__icon" />
     <h3 className="services__title"> UI/UX <br/> Designer </h3>
 
 </div>
