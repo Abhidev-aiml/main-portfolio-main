@@ -62,12 +62,14 @@ const [activeNav, setActiveNav] = useState("#home");
                         <UilMessage size="28" color="#000000" className="nav__icons"/>Contact
                         </a>
                     </li>
+                    
                 </ul>
 
                 <UilTimes size="28" color="#000000" className="nav__close" onClick={()=> showMenu(!Toggle)}/>
             </div>
             <div className="nav__toggle" onClick={()=> showMenu(!Toggle)}>
             <UilApps size="28" color="#000000"/>
+            
             </div>
         </nav>
     </header>
