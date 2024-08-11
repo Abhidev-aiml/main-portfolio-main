@@ -1,0 +1,151 @@
+
+//
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards; /* Slower animation */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.work__filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+    margin-bottom: var(--mb-2);
+}
+
+.work__item {
+    cursor: pointer;
+    position: relative;
+    padding: 0.25rem 0.75rem;
+    font-weight: var(--font-medium);
+    color: var(--title-color);
+    transition: transform 0.5s ease, color 0.5s ease;
+    text-transform: capitalize; /* Capitalizes the first letter of each word */
+    background-color: transparent; /* No background color */
+}
+
+.work__item:hover {
+    transform: scale(1.05);
+
+}
+
+.work__item::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 50%;
+    background-color: #000000; /* Subtle underline in darker black */
+    transition: width 0.5s ease, left 0.5s ease;
+}
+
+.work__item:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+
+.work__container {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 3rem;
+    justify-content: center;
+    transition: transform 1s ease, opacity 1s ease; /* Slower transition */}
+.toLowerCase().to.toLowerCase()
+.work__card {
+    background-color: var(--container-color);
+    border-radius: 1rem;
+    padding: 1.25rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.work__img {
+    width: 295px;
+    border-radius: 1rem;
+    margin-bottom: var(--mb-1);
+}
+
+.work__title {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-0-5);
+}
+
+.work__button {
+    color: var(--title-color);
+    font-size: var(--small-font-size);
+    display: inline-flex;
+    align-items: center;
+    column-gap: 0.25rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.toLowerCase().to.toLowerCase()
+.work__button-icon {
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.work__button:hover .work__button-icon {
+    transform: translateX(0.25rem);
+}
+
+.active-work {
+    background-color: var(--title-color);
+    color: var(--container-color);
+    transition: background-color 0.5s, color 0.5s; /* Slightly slower transition */
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 992px) {
+    .work__container {
+        gap: 1.25rem;
+    }
+
+    .work__card {
+        padding: 1rem;
+    }
+
+    .work__img {
+        margin-bottom: 0.75rem;
+    }
+.toLowerCase().to.toLowerCase()
+    .work__title {
+        margin-bottom: 0.25rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .work__container {
+        grid-template-columns: max-content;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .work__container {
+        grid-template-columns: 1fr;
+    }
+
+    .work__item {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .work__item {
+        font-size: var(--small-font-size);
+    }
+
+    .work__filters {
+        column-gap: 0.25rem;
+    }
+}

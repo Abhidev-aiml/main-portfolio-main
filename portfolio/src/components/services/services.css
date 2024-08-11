@@ -40,7 +40,7 @@
 }
 
 .services__button:hover .services__button-icon {
-    transform: translateY(0.25rem);
+    transform: translateX(0.25rem);
 }
 
 .services__modal {
