@@ -6,7 +6,7 @@ const WorkItems = ({item}) => {
     <img src={item.image} alt="" className='work__img' />
     <h3 className="work__title">{item.title}</h3>
     <a href="" className="work__button">
-        Demo <UilArrowRight size="20" color="#000000" className="work__button-icon" />
+        Learn More <UilArrowRight size="20" color="#000000" className="work__button-icon" />
     </a>
 </div> 
   )

@@ -3,7 +3,7 @@ import React from 'react'
 const Backend = () => {
   return (
     <div className="skills__content">
-        <h3 className="skills__title">Backend Developer</h3>
+        <h3 className="skills__title">Backend</h3>
         <div className="skills__box">
             <div className="skills__group">
                 <div className="skills__data">
@@ -19,8 +19,8 @@ const Backend = () => {
                 <box-icon name='badge-check' ></box-icon>
                 
                 <div>
-                    <h3 className="skills__name">Express JS</h3>
-                    <span className="skills__level"></span>
+                    <h3 className="skills__name">ExpressJS</h3>
+                    <span className="skills__level">Intermediate</span>
                 </div>
                 </div>
 
