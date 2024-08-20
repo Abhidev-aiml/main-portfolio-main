@@ -23,7 +23,7 @@ const Works = () => {
     // GSAP animation when updating the projects
     gsap.fromTo(
       containerRef.current,
-      { opacity: 0, y: 50 },
+      { opacity: 0, y: 90 },
       { opacity: 1, y: 0, duration: 0.3, ease: 'back.inOut' }
     );
 
