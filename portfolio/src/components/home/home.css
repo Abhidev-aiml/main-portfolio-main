@@ -12,16 +12,18 @@
 .home__social{
     display:grid;
     grid-template-columns: max-content;
-    row-gap: 1rem;
+    row-gap: 2rem;
 }
 
 .home__social-icon{
     font-size: 1.25rem;
     color: var(--title-color);
+    transition: transform 0.3s, background-color 0.3s;
 }
 
 .home__social-icon:hover{
-    color: var(--title-color-dark)
+    color: var(--title-color-dark);
+    transform: translateY(-0.25rem); 
 }
 
 .home__title{
